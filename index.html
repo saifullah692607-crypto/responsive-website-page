@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaifUllah - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2 class="logo">Banking loop</h2>
+      <ul class="nav-link" id="nav-link">
+        <li><a href="#">home</a></li>
+        <li><a href="#">page</a></li>
+        <li><a href="#">hologram</a></li>
+        <li><a href="#">vision</a></li>
+      </ul>
+      <i class="fa-solid fa-bars manutoggle" id="toggle"></i>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h6>I'm <span>SaifUllah</span></h6>
+    <h5>I'm <span>web developer</span></h5>
+
+    <p>
+      I am SaifUllah, a 19-year-old learning web development<br />
+      and working hard for the future.
+    </p>
+
+    <div class="btn">
+      <button type="button">Get</button>
+      <input type="button" value="see more" id="card" />
+    </div>
+  </main>
+
+  <section class="skills-section">
+    <div class="container2">
+      <h4>HTML</h4>
+      <p class="skill-desc">I may not have a creative mind yet, but I am trying my absolute best.</p>
+    </div>
+    <div class="container2">
+      <h4>CSS</h4>
+      <p class="skill-desc">I am at an intermediate level in CSS and continuously striving to improve.</p>
+    </div>
+    <div class="container2">
+      <h4>JAVASCRIPT</h4>
+      <p class="skill-desc">I am a beginner in JavaScript without much experience, but I will do my best.</p>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById("toggle");
+    const navlink = document.getElementById("nav-link");
+
+    toggle.addEventListener("click", () => {
+      navlink.classList.toggle("active");
+      toggle.classList.toggle("fa-bars");
+      toggle.classList.toggle("fa-xmark");
+    });
+  </script>
+</body>
+</html>
